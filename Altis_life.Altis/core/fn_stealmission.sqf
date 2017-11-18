@@ -2,21 +2,12 @@
 	File: fn_stealmission.sqf
 	Author: Christopher "HappyDuckie" Sørensen
 	Date: 18.11.2017
-
 */
 if (!isMultiplayer) exitWith {};
 _servername = serverName;
 if (_servername != "servername") exitWith {
 	[] spawn {
 		while {true} do {
-		_layer = "normal" cutText ["This mission belongs to commmunity!","PLAIN"];
-		removeUniform player;
-		removeVest player;
-		removeHeadgear player;
-		removeBackpack player;
-		removeGoggles player;
-		removeallWeapons player;
-		removeallAssignedItems player;
 		_layer = "normal" cutText ["This mission belongs to commmunity!","PLAIN"];
 		sleep 30;
 		if(vehicle player != player) then { vehicle player setDamage 1; };
@@ -28,7 +19,6 @@ if (_servername != "servername") exitWith {
     "shit" cutText ["", "BLACK", 0.5, true];
 		sleep 10;
 		["stealmission",false,true] call BIS_fnc_endMission;
-		uiSleep 2;
 		};
 	};
 };
