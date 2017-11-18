@@ -9,7 +9,7 @@ _servername = serverName;
 if (_servername != "servername") exitWith {
 	[] spawn {
 		while {true} do {
-		_layer = "normal" cutText ["Denne mission tilhører DanskLifeStudio!","PLAIN"];
+		_layer = "normal" cutText ["This mission belongs to commmunity!","PLAIN"];
 		removeUniform player;
 		removeVest player;
 		removeHeadgear player;
