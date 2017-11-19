@@ -1,6 +1,6 @@
 /*
 	File: fn_stealmission.sqf
-	Author: Christopher "HappyDuckie" Sørensen
+	Author: HappyDuckie
 	Date: 18.11.2017
 */
 if (!isMultiplayer) exitWith {};
