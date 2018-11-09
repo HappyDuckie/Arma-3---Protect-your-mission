@@ -5,7 +5,7 @@
 */
 if (!isMultiplayer) exitWith {};
 _servername = serverName;
-if (_servername != "servername") exitWith {
+if (_servername != "INSET YOUR SERVER NAME. THE SAME NAME AS WRITED IN SERVER.CFG") exitWith {
 	[] spawn {
 		while {true} do {
 		_layer = "normal" cutText ["This mission belongs to commmunity!","PLAIN"];
